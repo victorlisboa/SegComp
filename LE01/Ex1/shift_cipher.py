@@ -16,9 +16,11 @@ def shift_decrypt(ciphertext, k):
             decrypted_text += l
     return decrypted_text
 
-def main():
-    plaintext = input('Texto a ser cifrado: ').lower()
-    k = int(input('Chave k: '))
+def main():    
+    # plaintext = input('Texto a ser cifrado: ').lower()
+    # k = int(input('Chave k: '))
+    plaintext = 'amor eh fogo que arde sem se ver'
+    k = 3
     ciphertext = shift_encrypt(plaintext, k)
     decrypted_text = shift_decrypt(ciphertext, k)
     print(f'Texto criptografado por deslocamento com o k=3: {ciphertext}')
